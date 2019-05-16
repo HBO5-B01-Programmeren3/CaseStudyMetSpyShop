@@ -15,11 +15,18 @@ namespace CoreCourse.Spyshop.Web.Areas.Admin.Controllers
     [Area("Admin")]
     public class ProductsController : Controller
     {
-        private readonly SpyShopContext _context;
+        private readonly IRepository<Product, long> _productRepository;
+        private readonly IRepository<Category, long> _categoryRepository;
+        private readonly SpyShopContext _context; 
         private readonly IHostingEnvironment _env;
 
-        public ProductsController(SpyShopContext context, IHostingEnvironment env)
+        public ProductsController(IRepository<Product, long> productRepository,
+                                    IRepository<Category, long> categoryRepository,
+                                    SpyShopContext context,
+                                    IHostingEnvironment env)
         {
+            _productRepository = productRepository;
+            _categoryRepository = categoryRepository;
             _context = context;
             _env = env;
         }
@@ -29,8 +36,10 @@ namespace CoreCourse.Spyshop.Web.Areas.Admin.Controllers
         {
             var viewModel = new ProductsIndexVm
             {
-                Products = await _context.Products
-                    .OrderBy(e => e.SortNumber).ThenBy(e => e.Name).ToListAsync()
+                Products = _productRepository.GetAll()
+                                             .OrderBy(e => e.SortNumber)
+                                             .ThenBy(e => e.Name)
+                                             .ToList()
             };
             return View(viewModel);
         }
@@ -43,9 +52,9 @@ namespace CoreCourse.Spyshop.Web.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var product = await _context.Products
+            var product = _productRepository.GetAll()
                 .Include(e => e.Category)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefault(m => m.Id == id);
             if (product == null)
             {
                 return NotFound();
@@ -97,8 +106,8 @@ namespace CoreCourse.Spyshop.Web.Areas.Admin.Controllers
                     };
                     createdProduct.PhotoUrl = await SaveProductImage(createVm.UploadedImage);
 
-                    _context.Add(createdProduct);
-                    await _context.SaveChangesAsync();
+                    _productRepository.Add(createdProduct);
+
                     return RedirectToAction(nameof(Index));
                 }
                 else

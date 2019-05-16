@@ -29,7 +29,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 1L,
                     Description = "The built-in camera in this watch transmits a secured videofeed to a nearby monitor.",
                     PhotoUrl = "watch.jpg",
-                    SortNumber = 1
+                    SortNumber = 1,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -39,7 +40,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 1L,
                     Description = "The built-in camera in this watch transmits a secured videofeed to a nearby monitor. Videos can be saved locally on a microchip.",
                     PhotoUrl = "watch.jpg",
-                    SortNumber = 2
+                    SortNumber = 2,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -49,7 +51,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 1L,
                     Description = "This camera is waterproof to an astounding 700m, and runs entirely on hydrogen extracted by the environment.",
                     PhotoUrl = (string) null,
-                    SortNumber = (int?)  3
+                    SortNumber = (int?)  3,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -59,7 +62,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 1L,
                     Description = "When reaching an altitude of 1,5 km, this camera sends a live feed of the environment while parachuting down.",
                     PhotoUrl = (string) null,
-                    SortNumber = 4
+                    SortNumber = 4,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -69,7 +73,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 1L,
                     Description = "Easy to hide and mount IR camera.",
                     PhotoUrl = (string) null,
-                    SortNumber = 5
+                    SortNumber = 5,
+                    IsDeleted = false
                 },
 
                 //Communication
@@ -81,7 +86,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 2L,
                     Description = "A small transmitter shaped as a pencil. Speak in the tip and listen at the other end. Also writes.",
                     PhotoUrl = "pencil.jpg",
-                    SortNumber = 1
+                    SortNumber = 1,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -91,7 +97,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 2L,
                     Description = "Point this pen at your discussion partner to convince him of your point of view. Writes in blue ink.",
                     PhotoUrl = "pen.jpg",
-                    SortNumber = 2
+                    SortNumber = 2,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -101,7 +108,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 2L,
                     Description = "Evil geniuses have cats. Distract them with this laser pointer. Disperses catnip as a last resort.",
                     PhotoUrl = "cigar.jpg",
-                    SortNumber = 3
+                    SortNumber = 3,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -111,7 +119,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 2L,
                     Description = "Advanced voice-technology ensures this moustasche translates every word you say in the language of choice.",
                     PhotoUrl = "stash.jpg",
-                    SortNumber = 4
+                    SortNumber = 4,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -121,7 +130,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 2L,
                     Description = "Hang these low profile ear rings and translate every word to a preset language whispered in your ear.",
                     PhotoUrl = "earrings.jpg",
-                    SortNumber = 5
+                    SortNumber = 5,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -131,7 +141,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 2L,
                     Description = "Put this robotic fish-shaped device in your ear and understand any language.",
                     PhotoUrl = (string) null,
-                    SortNumber = (int?)  null
+                    SortNumber = (int?)  null,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -141,7 +152,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 2L,
                     Description = "A tiny cellphony with tracking capabilities.",
                     PhotoUrl = "tinyphone.jpg",
-                    SortNumber = (int?)  null
+                    SortNumber = (int?)  null,
+                    IsDeleted = false
                 },
 
                 //Distraction
@@ -153,7 +165,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 3L,
                     Description = "A small button underneath activates a hologram where you were previously seated.",
                     PhotoUrl = "cushion.jpg",
-                    SortNumber = 1
+                    SortNumber = 1,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -163,7 +176,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 3L,
                     Description = "One small drip of this liquid on the nose of your victim and he will tell you no more lies. Works best on long noses.",
                     PhotoUrl = "corrliq.jpg",
-                    SortNumber = 2
+                    SortNumber = 2,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -173,7 +187,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 3L,
                     Description = "When an enemy approaches you, simply switch on this device to confuse him. He will identify you as friendly.",
                     PhotoUrl = "idscramble.jpg",
-                    SortNumber = 3
+                    SortNumber = 3,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -183,7 +198,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 3L,
                     Description = "Place banknotes in this wallet. Place this in the fridge overnight to have them turn into the local currency.",
                     PhotoUrl = "wallet.jpg",
-                    SortNumber = 4
+                    SortNumber = 4,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -193,7 +209,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 3L,
                     Description = "Place mentos in cola bottle. Point at target to distract.",
                     PhotoUrl = (string) null,
-                    SortNumber = 5
+                    SortNumber = 5,
+                    IsDeleted = false
                 },
 
                 //General 
@@ -205,7 +222,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 4L,
                     Description = "The lenses allow to you to zoom up to 5 km.",
                     PhotoUrl = "lenses.jpg",
-                    SortNumber = (int?)  null
+                    SortNumber = (int?)  null,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -215,7 +233,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 4L,
                     Description = "Put a bandage on a wound and wait 10 to 30 minutes. Your injury will be fully healed.",
                     PhotoUrl = (string) null,
-                    SortNumber = (int?)  null
+                    SortNumber = (int?)  null,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -225,7 +244,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 4L,
                     Description = "A must-have when mingling with wealthy, evil geniuses.",
                     PhotoUrl = (string) null,
-                    SortNumber = (int?)  null
+                    SortNumber = (int?)  null,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -235,7 +255,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 4L,
                     Description = "This card game targets a specific person and lets him to win or lose. Comes with a mobile app.",
                     PhotoUrl = (string)null,
-                    SortNumber = (int?)  null
+                    SortNumber = (int?)  null,
+                    IsDeleted = false
                 },
 
                 //Navigation 
@@ -247,7 +268,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 5L,
                     Description = "Analyses signals sent to satellites. ",
                     PhotoUrl = (string)null,
-                    SortNumber = 1
+                    SortNumber = 1,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -257,7 +279,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 5L,
                     Description = "Tracks your accurate altitude and position in every landscape.",
                     PhotoUrl = "gps.jpg",
-                    SortNumber = 2
+                    SortNumber = 2,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -267,7 +290,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 5L,
                     Description = "Tracks your accurate altitude and position using the Galileo satellites.",
                     PhotoUrl = (string)null,
-                    SortNumber = 3
+                    SortNumber = 3,
+                    IsDeleted = false
                 },
                 new 
                 {
@@ -277,7 +301,8 @@ namespace CoreCourse.Spyshop.Web.Data
                     CategoryId = 5L,
                     Description = "These batteries (available in AA and AAA) send accurate positioning signals to the satellites of your choice.",
                     PhotoUrl = "batteries.jpg",
-                    SortNumber = 4
+                    SortNumber = 4,
+                    IsDeleted = false
                 }
             );
             
